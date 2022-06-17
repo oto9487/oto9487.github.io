@@ -1,11 +1,11 @@
 @font-face {
-    font-family: KT;
-    src: url(fonts/KdamThmorPro-Regular.ttf);
+    font-family: "KT";
+    src: url(../fonts/KdamThmorPro-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: NF;
-    src: url(fonts/NaikaiFont-Regular.ttf);
+    font-family: "NK";
+    src: url(../fonts/NaikaiFont-Regular.ttf) format("truetype");
 }
 
 * {
@@ -15,22 +15,21 @@
 }
 
 :root{
-    --bg-color-gradient: rgba(217,167,199,0.6), rgba(255,252,220,0.6);
+    --bg-color-gradient: rgba(188, 245, 242, 0.3), rgba(253, 249, 230, 0.3);
 }
 
-.background {
-    padding-top: 100px;
+.background-img {
+    background-image:linear-gradient(var(--bg-color-gradient)), url(../img/landscapeSecond.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.background-img .quote {
     width: 100%;
-    height: 600px;
-    background-image: linear-gradient(to bottom, var(--bg-color-gradient)), url(../img/background.png);
-}
-
-.background .quote {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 50px;
-    font-family: NF;
-    color: gray;
-    padding-left: 20px;
-    border-left: 10px solid white;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: "KT", sans-serif;
+    color: #000;
 }
