@@ -21,10 +21,10 @@
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(var(--color-background-gradient)), url("../images/landscape.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
@@ -69,4 +69,13 @@
 .navbar ul li a {
     text-decoration: none;
     color: #000;
+}
+
+.quote {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding-bottom: 100px;
 }
