@@ -8,74 +8,88 @@
     src: url(../fonts/NaikaiFont-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "UB";
+    src: url(../fonts/Ubuntu-Regular.ttf) format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "KT", "NK", sans-serif
+    font-family: "KT", "NK", sans-serif;
 }
 
 :root{
     --color-background-gradient: rgba(188, 245, 242, 0.3), rgba(202, 255, 177, 0.3);
-    --color-royal-blue: #4169e1;
 }
 
 .header {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(var(--color-background-gradient)), url("../images/landscape.png");
-    background-repeat: repeat;
+    background-image: linear-gradient(var(--color-background-gradient)), url("../img/landscape.png");
     background-size: cover;
+    position: relative;
 }
 
-.navbar {
-    width: 100%;
-    padding: 10px 30px;
-    margin: auto;
+nav {
+    padding: 0 5%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+nav img {
+    width: 240px;
+    height: 100px;
+}
+
+nav ion-icon {
+    display: none;
+}
+
+.navbar-items {
+    text-align: center;
+    align-items: center;
+    padding: 10px 30px;
     justify-content: space-between;
 }
 
-.logo {
-    width: 8%;
-    padding: 0 20px;
-    cursor: pointer;
-}
-
-.navbar ul li {
-    margin: 0 30px;
-    padding: 10px 0;
+.navbar-items ul li {
+    margin: 0 20px;
+    padding: 20px 0;
     list-style: none;
     display: inline-block;
     position: relative;
 }
 
-.navbar ul li::after {
+.navbar-items ul li::after {
+    display: block;
     content: "";
     height: 3px;
     width: 0;
-    background: var(--color-royal-blue);
-    position: absolute;
+    background: #000;
     left: 0;
     bottom: 5px;
     transition: 0.5s;
+    position: absolute;
 }
 
-.navbar ul li:hover::after{
+.navbar-items ul li:hover::after {
     width: 100%;
 }
 
-.navbar ul li a {
+.navbar-items ul li a {
     text-decoration: none;
     color: #000;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .quote {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    color: #000;
     text-align: center;
-    padding-bottom: 100px;
+    font-size: 30px;
+    transform: translateY(20vh);
 }
