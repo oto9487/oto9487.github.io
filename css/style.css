@@ -38,12 +38,12 @@ nav {
 nav img {
     width: 240px;
     height: 100px;
+    cursor: pointer;
 }
 
 .navbar-items {
     text-align: center;
     align-items: center;
-    padding: 10px 30px;
     justify-content: space-between;
 }
 
