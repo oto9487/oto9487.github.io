@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "NK";
-    src: url(../fonts/NaikaiFont-Regular.ttf) format("truetype");
+    font-family: "SC";
+    src: url(../fonts/SourceCodePro-Regular.ttf) format("truetype");
 }
 
 * {
@@ -16,10 +16,11 @@
 }
 
 :root{
-    --color-background-gradient: rgba(188, 245, 242, 0.3), rgba(202, 255, 177, 0.3);
+    --color-background-gradient: rgba(231, 255, 254, 0.3), rgba(44, 139, 0, 0.3);
+    --color-cerulean-blue: #007ba7;
 }
 
-.header {
+.home {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(var(--color-background-gradient)), url("../img/landscape.png");
@@ -37,10 +38,6 @@ nav {
 nav img {
     width: 240px;
     height: 100px;
-}
-
-nav ion-icon {
-    display: none;
 }
 
 .navbar-items {
@@ -63,9 +60,9 @@ nav ion-icon {
     content: "";
     height: 3px;
     width: 0;
-    background: #000;
+    background: var(--color-cerulean-blue);
     left: 0;
-    bottom: 5px;
+    bottom: 10px;
     transition: 0.5s;
     position: absolute;
 }
@@ -81,10 +78,24 @@ nav ion-icon {
     padding: 10px;
 }
 
-.quote {
+.text {
     width: 100%;
     color: #000;
     text-align: center;
-    font-size: 30px;
     transform: translateY(20vh);
+}
+
+.text p {
+    font-size: 60px;
+}
+
+.text a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-cerulean-blue);
+    display: inline-block;
+    border: 3px solid var(--color-cerulean-blue);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
 }

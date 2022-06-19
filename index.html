@@ -10,11 +10,10 @@
 </head>
 
 <body>
-    <section class="header">
+    <section class="home">
         <nav>
             <img src="./img/heading.png">
             <div class="navbar-items">
-                <ion-icon name="close"></ion-icon>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -23,10 +22,19 @@
                 </ul>
             </div>
         </nav>
-        <div class="quote">
-            <h1>Hi, I'm oto9487.</h1>
-            <p>It always seems impossible until it's done.</p>
+        <div class="text">
+            <p>Hi, I'm <span class="auto-input"></span></p>
+            <a href="">Contact Me</a>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input",{
+            strings: ["oto9487.", "a programmer."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
 </body>
 </html>
