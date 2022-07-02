@@ -11,18 +11,33 @@
 
 <body>
     <section class="home">
-        <nav>
-            <img src="./data/img/heading.png">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a class="logo" href="">
+                    <div class="icon">
+                        <img src="./data/img/logo.png" alt="oto9487 logo">
+                    </div>
+                    <b class="title">oto9487</b>
+                </a>
+            </div>
             <div class="navbar-items">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li>
+                        <a href="">
+                            <span class="icon-home"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="title-home">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="icon-about"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="title-about">About</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="text">
+        <div class="home-text">
             <p>Hi, I'm <span class="auto-input"></span></p>
             <a href="">Contact Me</a>
         </div>
@@ -30,11 +45,13 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-input",{
-            strings: ["oto9487.", "a programmer.", "coding..."],
-            typeSpeed: 100,
-            backSpeed: 100,
+            strings: ["coding..."],
+            typeSpeed: 200,
+            backSpeed: 200,
             loop: true,
         });
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
