@@ -1,6 +1,6 @@
 @font-face {
     font-family: "KT";
-    src: url(../fonts/KdamThmorPro-Regular.ttf) format("truetype");
+    src: url(../../fonts/KdamThmorPro-Regular.ttf) format("truetype");
 }
 
 * {
@@ -16,10 +16,11 @@
     --color-background: #1e2124;
 }
 
-.about {
+body {
     width: 100vw;
     height: 100vh;
     background: var(--color-background);
+    overflow-x: hidden;
     background-size: cover;
 }
 
@@ -37,7 +38,6 @@
     align-items: center;
     display: flex;
     text-decoration: none;
-    color: #fff;
 }
 
 .navbar-logo a.logo .icon img {
@@ -49,6 +49,7 @@
 }
 
 .navbar-logo a.logo b.title {
+    color: #fff;
     font-weight: 500;
     padding-left: 10px;
     transition: 0.3s;
@@ -60,7 +61,6 @@
 }
 
 .navbar-items ul li {
-    color: #fff;
     margin: 0 20px;
     padding: 10px 0;
     list-style: none;
@@ -68,8 +68,8 @@
 }
 
 .navbar-items ul li a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
     font-size: 20px;
     padding: 10px;
     transition: 0.3s;

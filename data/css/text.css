@@ -1,0 +1,27 @@
+.text {
+    width: 100%;
+    text-align: center;
+    transform: translateY(20vh);
+}
+
+.text p {
+    color: #fff;
+    font-size: 60px;
+}
+
+.text a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.text a:hover {
+    color: var(--color-hover-blue);
+    border: 3px solid var(--color-hover-blue);
+}

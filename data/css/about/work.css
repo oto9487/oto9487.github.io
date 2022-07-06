@@ -1,0 +1,9 @@
+.work {
+    text-align: center;
+    transform: translateY(35vh);
+}
+
+.work p {
+    color: #fff;
+    font-size: 40px;
+}
