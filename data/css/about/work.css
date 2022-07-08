@@ -1,9 +1,33 @@
 .work {
+    text-decoration: none;
     text-align: center;
+}
+
+.work p.heading {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
     transform: translateY(35vh);
 }
 
-.work p {
+.work .container{
+    transform: translateY(45vh);
+}
+
+.work .container .personal-website {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.work .container .personal-website a{
+    font-weight: 200;
+    text-decoration: none;
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;   
+}
+
+.work .container .personal-website .logo img {
+    width: 40vh;
+    height: 40vh;
 }
