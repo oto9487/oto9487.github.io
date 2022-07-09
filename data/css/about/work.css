@@ -1,3 +1,7 @@
+:root{
+    --color-hover-blue: #53abff;
+}
+
 .work {
     text-decoration: none;
     text-align: center;
@@ -20,14 +24,27 @@
     align-items: center;
 }
 
-.work .container .personal-website a{
-    font-weight: 200;
+.work .container .personal-website a.personal-website{
     text-decoration: none;
     color: #fff;
     font-size: 30px;   
 }
 
-.work .container .personal-website .logo img {
+.work .container .personal-website a.personal-website .icon img {
     width: 40vh;
     height: 40vh;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.work .container .personal-website a.personal-website p.text {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.work .container .personal-website a.personal-website p.text:hover {
+    text-decoration: underline;
+    color: var(--color-hover-blue);
+    transition: 0.3s;
 }

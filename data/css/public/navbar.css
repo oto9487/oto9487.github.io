@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "KT", sans-serif;
+    font-family: "KT", monospace;
 }
 
 :root{
@@ -20,6 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: var(--color-background);
+    color: #fff;
     overflow-x: hidden;
     background-size: cover;
 }
@@ -48,14 +49,14 @@ body {
     cursor: pointer;
 }
 
-.navbar-logo a.logo b.title {
+.navbar-logo a.logo p.title {
     color: #fff;
     font-weight: 500;
     padding-left: 10px;
     transition: 0.3s;
 }
 
-.navbar-logo a.logo b.title:hover {
+.navbar-logo a.logo p.title:hover {
     color: var(--color-hover-blue);
     transition: 0.3s;
 }
