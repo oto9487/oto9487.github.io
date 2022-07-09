@@ -24,27 +24,31 @@
     align-items: center;
 }
 
-.work .container .personal-website a.personal-website{
+.work .container .personal-website a.link {
     text-decoration: none;
     color: #fff;
-    font-size: 30px;   
+    font-size: 32px;   
 }
 
-.work .container .personal-website a.personal-website .icon img {
+.work .container .personal-website a.link .icon img {
     width: 40vh;
     height: 40vh;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.work .container .personal-website a.personal-website p.text {
+.work .container .personal-website a.link p.text {
     text-decoration: none;
     color: #fff;
     transition: 0.3s;
 }
 
-.work .container .personal-website a.personal-website p.text:hover {
+.work .container .personal-website a.link p.text:hover {
     text-decoration: underline;
     color: var(--color-hover-blue);
     transition: 0.3s;
+}
+
+.work .container .personal-website p.description {
+    font-size: 24px;
 }
